@@ -1,2 +1,2 @@
 # Highfivethefive.github.io
-My First website Created fro School project
+My First website Created for School project
