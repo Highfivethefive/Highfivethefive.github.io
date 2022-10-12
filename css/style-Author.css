@@ -1,0 +1,106 @@
+header{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+#nav{
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 3px;
+    width: 100%;
+    height: 100vh;
+}
+#Sci-fi{
+    background-color: #720d0de3 ;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    height: auto;
+}
+#DuneAuthor{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: yellow;
+}
+#DuneAuthorAbout{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: green;
+}
+#fantasy{
+    background-color: #720d0de3 ;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: auto;
+}
+#StormlightAuthor{
+    grid-column: 1/2;
+    grid-row:  4/5;
+    background-color: yellow;
+}
+#StormlightAuthorAbout{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: green;
+}
+#WheelOfTimeAuthor{
+    grid-column: 1/2;
+    grid-row:  5/6;
+    background-color: yellow;
+}
+#WheelOfTimeAbout{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-color: green;
+}
+#YA-fantasy{
+    background-color: #720d0de3 ;
+    grid-column: 1/3;
+    grid-row: 6/7;
+    height: auto;
+}
+#HisDarkMaterialsAuthor{
+    grid-column: 1/2;
+    grid-row:  7/8;
+    background-color: yellow;
+}
+#HisDarkMaterialsAuthorAbout{
+    grid-column: 2/3;
+    grid-row: 7/8;
+    background-color: green;
+}
+#GrimDark{
+    background-color: #720d0de3 ;
+    grid-column: 1/3;
+    grid-row: 8/9;
+    height: auto;
+}
+#ASOIAFAuthor{
+    grid-column: 1/2;
+    grid-row:  9/10;
+    background-color: yellow;
+}
+#ASOIAFAuthorAbout{
+    grid-column: 2/3;
+    grid-row: 9/10;
+    background-color: green;
+}
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+    font-size: small;
+}
