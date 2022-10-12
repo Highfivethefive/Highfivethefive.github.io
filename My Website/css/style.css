@@ -1,0 +1,94 @@
+body{
+    background-color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 3px;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+}
+div.item {
+    background: LightBlue;
+    border: 1px solid Blue;
+    padding: 20px;
+    text-align: center;
+  }
+  header{
+    /*position: fixed;*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(231, 245, 182);
+    color: black;
+    text-align: center;
+    font-size: small;
+}
+#nav{
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+.item.item1 {
+    background-color: blue ;
+    grid-column: 1/3;
+    height: auto;
+    font-weight: 800;
+    font-size: 50px;
+
+
+}
+.item.item2 {
+    background-color: #e9e9e9e3 ;
+    grid-row: 2/3;
+    height: auto;
+    
+}
+.item.item3 {
+    background-color: yellow ;
+    height: auto;
+}
+/*.nested{
+    display: grid
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(3,1fr);
+}*/
+.item.item4{
+    background-color: red ;
+    grid-column: 1/3;
+    
+}
+
+
+/* Content inside the website thats not the grid*/
+.house{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+footer{
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+    font-size: small;
+}
