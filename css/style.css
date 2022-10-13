@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&display=swap');
-
-
 body{
     background-color: white;
-}
-.container{
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-auto-rows: minmax(100px,auto);
-    gap: 3px;
-    width: 100%;
-    height: 100vh;
 }
 div.item {
     background: LightBlue;
@@ -45,40 +35,27 @@ h1{
     flex-direction: row;
     justify-content: space-around;
 }
-
-
-
-
-
-
 .item.item1 {
     background-color: rgb(105, 105, 138) ;
-    grid-column: 1;
-    grid-row: 1/4;
+    grid-row: 1/3;
     height: auto;
-
 }
-/* House image */
+/* Bookshelf image */
 .item.item2 {
     background-color: #e9e9e9e3 ;
-    grid-column: 2/4;
-    grid-row: 0/2;
+    grid-row:4;
     height: auto;
     
 }
 /* Logo container*/
 .item.item3 {
     background-color: yellow ;
-    grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 5;
     height: auto;
 }
 .item.item4{
-    grid-column: 3/4;
-    grid-row: 2/4; 
+    grid-row: 6; 
 }
-
-
 /* Content inside the website thats not the grid*/
 #Bookshelf{
     width: 100%;
@@ -90,6 +67,16 @@ h1{
     height: 100%;
     position: relative;
 }
+h3{
+    position:absolute;
+    bottom:230px;
+    right: 50%;
+}
+ul{
+    position:absolute;
+    bottom:10%;
+    right: 50%;
+}
 footer{
     /*position: fixed;*/
     left: 0;
@@ -99,4 +86,38 @@ footer{
     color: black;
     text-align: center;
     font-size: small;
+}
+@media screen and ( min-width : 800px ) {
+    .container{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        gap: 3px;
+        width: 100%;
+        height: 100vh;
+    }
+    /* Left Column*/
+    .item.item1 {
+        grid-column: 1;
+        grid-row: 1/4;
+        height: auto;
+        position:relative;
+    }
+    /* Bookshelf image */
+    .item.item2 {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        height: auto;
+    }
+    /* Logo container*/
+    .item.item3 {
+        background-color: yellow ;
+        grid-column: 2/3;
+        grid-row: 2/4;
+        height: auto;
+    }
+    .item.item4{
+        grid-column: 3/4;
+        grid-row: 2/4; 
+    }
 }
