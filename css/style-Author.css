@@ -1,3 +1,6 @@
+/* Page Has mobile layout*/
+
+body { background-color: #bbb; }
 header{
     background-color: blanchedalmond;
     text-align: center;
@@ -16,7 +19,6 @@ header{
 }
 .container{
     display: grid;
-    grid-template-columns:repeat(2,1fr);
     grid-auto-rows: minmax(100px,auto);
     gap: 3px;
     width: 100%;
@@ -32,74 +34,80 @@ h2{
     text-align: center;
 }
 #Sci-fi{
-    background-color: #720d0de3 ;
-    grid-column: 1/3;
-    grid-row: 1/2;
+    color: white;
+    background-color: #000;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000 17px ), repeating-linear-gradient( #ff840055, #ff8400 );
+    grid-row: 1;
     height: auto;
 }
 #DuneAuthor{
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2;
 }
 #DuneAuthorAbout{
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3;
     border: black solid 4px;
 }
 #fantasy{
-    background-color: #720d0de3 ;
-    grid-column: 1/3;
-    grid-row: 3/4;
+    color: white;
+    background-color: #4f55ee;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
+    background-size: 34px 60px;
+    background-position: 0 0, 0 0, 17px 30px, 17px 30px, 0 0, 17px 30px;
+    grid-row: 4;
     height: auto;
 }
 #StormlightAuthor{
-    grid-column: 1/2;
-    grid-row:  4/5;
+    grid-row:  5;
 }
 #StormlightAuthorAbout{
-    grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 6;
     border: black solid 4px;
 }
 #WheelOfTimeAuthor{
-    grid-column: 1/2;
-    grid-row:  5/6;
+    grid-row:  7;
 }
 #WheelOfTimeAbout{
-    grid-column: 2/3;
-    grid-row: 5/6;
+    grid-row: 8;
     border: black solid 4px;
 }
 #YA-fantasy{
-    background-color: #720d0de3 ;
-    grid-column: 1/3;
-    grid-row: 6/7;
+    color: white;
+    background-color: #54c712;
+    background-image: radial-gradient(circle at center center, #000000, #54c712), repeating-radial-gradient(circle at center center, #000000, #000000, 17px, transparent 34px, transparent 17px);
+    background-blend-mode: multiply;
+    grid-row: 9;
     height: auto;
 }
 #HisDarkMaterialsAuthor{
-    grid-column: 1/2;
-    grid-row:  7/8;
+    grid-row:  10;
 }
 #HisDarkMaterialsAuthorAbout{
-    grid-column: 2/3;
-    grid-row: 7/8;
+    grid-row: 11;
     border: black solid 4px;
         
 }
 #GrimDark{
-    background-color: #720d0de3 ;
-    grid-column: 1/3;
-    grid-row: 8/9;
+    color: white;
+    background-color: #8b15ad;
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #8b15ad 25%);
+    background-position:  17px 0, 17px 0, 0 0, 0 0;
+    background-size: 34px 34px;
+    background-repeat: repeat;
+    grid-row: 12;
     height: auto;
 }
 #ASOIAFAuthor{
-    grid-column: 1/2;
-    grid-row:  9/10;
+    grid-row:  13;
 }
 #ASOIAFAuthorAbout{
-    grid-column: 2/3;
-    grid-row: 9/10;
+    grid-row: 14;
     border: black solid 4px;
+}
+.Authorfont{
+    font-size: 30px;
 }
 footer{
     left: 0;
@@ -109,4 +117,80 @@ footer{
     color: black;
     text-align: center;
     font-size: small;
+}
+
+/* Mobile */
+@media screen and ( min-width : 800px ) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(10,fit-content);
+        grid-template-rows: repeat(7, fit-content);
+    }
+    .container{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        gap: 3px;
+        width: 100%;
+    }
+    #Sci-fi{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        height: auto;
+    }
+    #DuneAuthor{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #DuneAuthorAbout{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #fantasy{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        height: auto;
+    }
+    #StormlightAuthor{
+        grid-column: 1/2;
+        grid-row:  4/5;
+    }
+    #StormlightAuthorAbout{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #WheelOfTimeAuthor{
+        grid-column: 1/2;
+        grid-row:  5/6;
+    }
+    #WheelOfTimeAbout{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    #YA-fantasy{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        height: auto;
+    }
+    #HisDarkMaterialsAuthor{
+        grid-column: 1/2;
+        grid-row:  7/8;
+    }
+    #HisDarkMaterialsAuthorAbout{
+        grid-column: 2/3;
+        grid-row: 7/8;    
+    }
+    #GrimDark{t;
+        grid-column: 1/3;
+        grid-row: 8/9;
+        height: auto;
+    }
+    #ASOIAFAuthor{
+        grid-column: 1/2;
+        grid-row:  9/10;
+    }
+    #ASOIAFAuthorAbout{
+        grid-column: 2/3;
+        grid-row: 9/10;
+    }
 }
