@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 header{
     background-color: blanchedalmond;
     text-align: center;
+    border: black solid 3px;
+    font-family: 'Marcellus SC', serif;
 }
-
-
-
 #nav{
     margin: 0;
     width: 100vw;
@@ -17,11 +17,10 @@ header{
     flex-direction: row;
     justify-content: space-around;
 }
-
-
-
-
 .img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 300px;
 }
