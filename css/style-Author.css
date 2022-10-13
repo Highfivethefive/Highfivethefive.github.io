@@ -40,12 +40,11 @@ h2{
 #DuneAuthor{
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: yellow;
 }
 #DuneAuthorAbout{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: green;
+    border: black solid 4px;
 }
 #fantasy{
     background-color: #720d0de3 ;
@@ -56,22 +55,20 @@ h2{
 #StormlightAuthor{
     grid-column: 1/2;
     grid-row:  4/5;
-    background-color: yellow;
 }
 #StormlightAuthorAbout{
     grid-column: 2/3;
     grid-row: 4/5;
-    background-color: green;
+    border: black solid 4px;
 }
 #WheelOfTimeAuthor{
     grid-column: 1/2;
     grid-row:  5/6;
-    background-color: yellow;
 }
 #WheelOfTimeAbout{
     grid-column: 2/3;
     grid-row: 5/6;
-    background-color: green;
+    border: black solid 4px;
 }
 #YA-fantasy{
     background-color: #720d0de3 ;
@@ -82,12 +79,12 @@ h2{
 #HisDarkMaterialsAuthor{
     grid-column: 1/2;
     grid-row:  7/8;
-    background-color: yellow;
 }
 #HisDarkMaterialsAuthorAbout{
     grid-column: 2/3;
     grid-row: 7/8;
-    background-color: green;
+    border: black solid 4px;
+        
 }
 #GrimDark{
     background-color: #720d0de3 ;
@@ -98,12 +95,11 @@ h2{
 #ASOIAFAuthor{
     grid-column: 1/2;
     grid-row:  9/10;
-    background-color: yellow;
 }
 #ASOIAFAuthorAbout{
     grid-column: 2/3;
     grid-row: 9/10;
-    background-color: green;
+    border: black solid 4px;
 }
 footer{
     left: 0;
