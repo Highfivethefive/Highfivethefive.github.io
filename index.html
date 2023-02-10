@@ -6,36 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        header {
+          background-image: url('./images/headerbackground.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .item.item1{
+          background-image: url('./images/Grain.webp');
+          background-size: cover;
+        }
+    </style>
 </head>
 <body>
+    <nav id="nav" class="navbar">
+        <a href="#">Home</a>
+        <a href="WebSite pages/about.html">About</a>
+        <a href="WebSite pages/Author.html">Author info</a>
+        <a href="WebSite pages/art.html">Art</a>
+        <a href="WebSite pages/contact.html">Contact</a>
+    </nav>
 
 <header>
-    <nav id="nav" class="navbar">
-    <a href="#">Home</a>
-    <a href="WebSite pages/about.html">About</a>
-    <a href="WebSite pages/Author.html">Author info</a>
-    <a href="WebSite pages/art.html">Art</a>
-    <a href="WebSite pages/contact.html">Contact</a>
-    </nav>
 <h1>Home</h1>
 </header>
 <br>
 <div class="container">
         <!-- Left Side Bar -->
     <div class="item item1">
-        <h2>Jade Wolfe</h2>
+        <h1>Jade Wolfe</h1>
         <br>
-        <img src="images/Helm.png" alt="helm">
+        <img src="images/crow.png" width="80%" alt="Crow">
         <br>
-        <h3>Fantasy Genres</h3>
-        <ul>
-            <li>Sci-fi</li>
-            <li>High Fantasy</li>
-            <li>GrimDark</li>
-            <li>SteamPunk</li>
-            <li>Historical fantasy</li>
-            <li>Ya fantasy</li>
-        </ul>
+            <h2 id="list">Fantasy Genres</h2>
+            <ul id="list">
+                <li>Sci-fi</li>
+                <li>High Fantasy</li>
+                <li>GrimDark</li>
+                <li>SteamPunk</li>
+                <li>Historical fantasy</li>
+                <li>Ya fantasy</li>
+            </ul>
     </div>
     <!--Top Right Image -->
     <div class="item item2">

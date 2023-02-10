@@ -5,7 +5,11 @@ header{
     border: black solid 3px;
     font-family: 'Marcellus SC', serif;
 }
+body{
+    background-color: #bbb;
+}
 #nav{
+    background-color: antiquewhite;
     margin: 0;
     width: 100vw;
     text-align: center;
@@ -26,6 +30,7 @@ header{
 }
 main{
     text-align: center;
+    background-color: lightskyblue;
 }
 
 footer{

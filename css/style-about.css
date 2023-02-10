@@ -1,9 +1,9 @@
 header{
-    background-color: blanchedalmond;
     text-align: center;
     border: black solid 3px;
 }
 #nav{
+    background-color: antiquewhite;
     margin: 0;
     width: 100vw;
     text-align: center;
@@ -25,6 +25,9 @@ header{
 }
 h2{
     text-align: center;
+}
+body{
+    background-color: #bbb;
 }
 
 
